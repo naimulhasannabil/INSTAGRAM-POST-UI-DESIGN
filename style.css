@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+}
+
+:root {
+  --bg-color: #fafafa;
+  --text-color: #262626;
+  --light-text: #8e8e8e;
+  --border-color: #dbdbdb;
+  --btn-color: #b3dbff;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post {
+  background-color: #fff;
+  width: 470px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+/* Profile Header */
+.post_header {
+  padding: 3px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post_header .profile_info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.post_header .profile_info .profile_img {
+  width: 42px;
+  height: 42px;
+  background: linear-gradient(to top right, orange, purple);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.post_header .profile_info .profile_img img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-sizing: content-box;
+}
+
+.post_header .profile_info span {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.options span {
+  font-size: 16px;
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* POST IMG */
+.post_img {
+  width: 100%;
+  aspect-ratio: 1;
+  cursor: pointer;
+}
+.post_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Post body */
+.post_body {
+  padding: 0 16px;
+}
+
+.post_actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.post_actions span {
+  display: flex;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.post_actions span:first-of-type {
+  font-size: 28px;
+}
+
+.post_actions span:last-of-type {
+  margin-left: auto;
+}
+
+.post_info {
+  margin-bottom: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.post_title {
+  margin-bottom: 8px;
+}
+
+.post_title .username {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.post_comments {
+  margin-bottom: 10px;
+}
+
+.post_comments > span {
+  display: block;
+  color: var(--light-text);
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+
+.post_comments .comment {
+  display: flex;
+}
+
+.post_comments .comment .comment_username {
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.post_comments .comment .heart_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.post_timestamp {
+  margin-bottom: 10px;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--light-text);
+}
+
+/* input Box */
+.input_box {
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid var(--border-color);
+}
+
+.input_box .eomji {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.input_box input {
+  border: none;
+  outline: none;
+  color: var(--light-text);
+  width: 100%;
+  margin: 0 12px;
+}
+
+.input_box button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: var(--btn-color);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.heart_icon_fill {
+  color: red;
+}
